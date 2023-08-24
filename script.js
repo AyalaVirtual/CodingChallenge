@@ -17,46 +17,57 @@ let showAll = document.querySelector("#show-all");
 
 function changeColor(event) {
     if (event.target === change1) {
-        red.style.backgroundColor = "purple";
+        red.style.backgroundColor = "rgb(128, 0, 128)";
+        red.style.borderColor = "rgb(7, 197, 7)";
     } else if (event.target === change2) {
-        blue.style.backgroundColor = "pink";
+        blue.style.backgroundColor = "rgb(255, 165, 0)";
+        blue.style.borderColor = "rgb(165, 42, 42)";
     } else if (event.target === change3) {
-        green.style.backgroundColor = "orange";
+        green.style.backgroundColor = "rgb(255, 138, 158)";
+        green.style.borderColor = "rgb(255, 255, 0)";
     } else if (event.target === changeAll) {
-        red.style.backgroundColor = "gray";
-        blue.style.backgroundColor = "black";
-        green.style.backgroundColor = "white";
+        red.style.backgroundColor = "rgb(133, 130, 130)";
+        red.style.borderColor = "rgb(255, 138, 158)";
+        blue.style.backgroundColor = "rgb(0, 0, 0)";
+        blue.style.borderColor = "rgb(7, 197, 7)";
+        green.style.backgroundColor = "rgb(255, 255, 255)";
+        green.style.borderColor = "rgb(128, 0, 128)";
     }
 }
 
 
 function hideBoxes(event) {
     if (event.target === hide1) {
-        console.log("red is purple");
-        red.style.display = "none";
+        red.style.visibility = "hidden";
     } else if (event.target === hide2) {
-        blue.style.display = "none";
+        blue.style.visibility = "hidden";
     } else if (event.target === hide3) {
-        green.style.display = "none";
+        green.style.visibility = "hidden";
     } else if (event.target === hideAll) {
-        red.style.display = "none";
-        blue.style.display = "none";
-        green.style.display = "none";
+        red.style.visibility = "hidden";
+        blue.style.visibility = "hidden";
+        green.style.visibility = "hidden";
     }
 }
 
 
 function resetBoxes() {
-    red.style.backgroundColor = "red";
-    blue.style.backgroundColor = "blue";
+    red.style.visibility = "visible";
+    red.style.backgroundColor = "rgb(255, 0, 0)";
+    red.style.borderColor = "rgb(0, 0, 0)";
+    blue.style.visibility = "visible";
+    blue.style.backgroundColor = "rgb(0, 0, 255)";
+    blue.style.borderColor = "rgb(255, 255, 0)";
+    green.style.visibility = "visible";
     green.style.backgroundColor = "rgb(7, 197, 7)";
+    green.style.borderColor = "rgb(255, 0, 255)";
 }
 
 
 function showBoxes() {
-    red.style.display = "block";
-    blue.style.display = "block";
-    green.style.display = "block";
+    red.style.visibility = "visible";
+    blue.style.visibility = "visible";
+    green.style.visibility = "visible";
 }
 
 
